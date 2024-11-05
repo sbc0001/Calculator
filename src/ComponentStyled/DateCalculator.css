@@ -1,0 +1,86 @@
+:root{
+  --dark:#333; --white:#fff;
+}
+.date-calculator {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:var(--dark);
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    min-height:250px;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.4);
+    position:relative;
+  }
+  
+  .date-calculator h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--white);
+  }
+  .date-calculator.on h2 {
+    color: var(--dark);
+  }
+  
+  .input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group label {
+    font-size: 0.9rem;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: #efefef;
+    font-weight:bold;
+  }
+  
+  .input-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight:bold;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--white);
+    color: var(--dark);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:hover {
+    background-color: #106ebe;
+  }
+  button.on:hover {
+    background-color: #106ebe;
+  }
+  
+  .result {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--white);
+  }
+  div.on{
+    background-color:var(--white);
+    color:var(--dark);
+  } 
+  button.on{
+    color:var(--white);
+    background-color:var(--dark);
+  }

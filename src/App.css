@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+.scientific-calculator {
+  width: 320px;
+  background-color: #f0f0f0;
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.display {
+  background-color: #fff;
+  padding: 20px;
+  text-align: right;
+  font-size: 24px;
+  border-bottom: 1px solid #d1d1d1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.keypad {
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.btn {
+  width: auto;
+  height: 40px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #e6e6e6;
+}
+
+.btn:active {
+  background-color: #d4d4d4;
+}
+
+.equal {
+  background-color: #0078d7;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.equal:hover {
+  background-color: #006abc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.equal:active {
+  background-color: #005aa3;
+}
+
+/* 첫 번째와 두 번째 행의 버튼 스타일 */
+.row:nth-child(1) .btn,
+.row:nth-child(2) .btn {
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+/* 숫자 버튼 스타일 */
+.btn:nth-child(n+4):nth-child(-n+7) {
+  background-color: #fff;
+  font-weight: bold;
 }

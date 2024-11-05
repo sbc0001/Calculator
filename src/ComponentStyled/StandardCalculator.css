@@ -1,0 +1,144 @@
+:root{
+    --dark:#333; --white:#fff;
+}
+.CalculatorContainer{
+    background-color:var(--dark);
+    color:var(--white);
+    border-radius: 8px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 320px;
+    font-family: 'Segoe UI', sans-serif;
+    position:relative;
+    }
+
+.Display{
+    background-color: var(--white);
+    color:var(--dark);
+    border:1px solid #ccc;
+    border-radius: 4px;
+    font-size: 2em;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: right;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1) inset;
+    }
+
+    .Display.on{
+    background-color: var(--white);
+    color:var(--dark);
+    }
+
+.History{
+    font-size: 0.6em;
+    font-weight:bold;
+    color: #666;
+}
+.History.on{
+    background-color: var(--white);
+    color:var(--dark);
+}
+
+.CurrentValue{ 
+    font-size: 1em;
+    font-weight:bold;
+}
+.CurrentValue.on{
+    background-color: var(--white);
+    color:var(--dark);
+}
+
+.ButtonGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.Button {
+    background-color:var(--white);
+    border: none;
+    border-radius: 4px;
+    color: var(--dark);
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 15px 0;
+    transition: background-color 0.3s;
+}
+.Button:hover {
+        background-color:#ecddfe;
+        color:var(--dark);
+    }
+
+.Button:active {
+        background-color:#beacdf;
+    }
+.operator{
+    background-color:var(--white);
+    border: none;
+    border-radius: 4px;
+    color:var(--dark);
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 15px 0;
+    transition: background-color 0.3s;
+}
+.operator:hover{
+    background-color:#efddce;
+    color:var(--dark);
+}
+.operator:active{
+    background-color:#fdcaeb;
+}
+
+.EqualsButton{
+    background-color: var(--white);
+    color:var(--dark);
+}
+.EqualsButton:hover {
+        background-color: #f05aa6;
+    }
+
+.EqualsButton:active {
+        background-color: #004c8c;
+        color:var(--white);
+    }
+
+.toggle{
+    background-color:var(--white);
+    color:var(--dark);
+    width:50px;
+    height:30px;
+    padding:5px 10px;
+    box-sizing:border-box;
+    position:absolute;
+    right:30px;
+    top:20px;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);
+}
+.on{
+    background-color:var(--dark);
+    color:var(--white);
+}
+.CalculatorContainer.on{
+    background-color:var(--white);
+    color:var(--dark);
+}
+.ButtonGrid.on{
+    background-color:var(--white);
+}
+.toggle.on{
+    background-color:var(--dark);
+    color:var(--white);
+}
+.toggle:hover{
+    background-color:var(--dark);
+    color:var(--white);
+}
+.toggle.on:hover{
+    background-color:var(--white);
+    color:var(--dark);
+}
